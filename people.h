@@ -15,6 +15,7 @@ class people
         string GetName();
         int getYear();
         string GetNature();
+        people(const people &a);
     protected:
 
     private:

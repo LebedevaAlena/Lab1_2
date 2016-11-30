@@ -50,3 +50,15 @@ string people::GetNature()
 {
     return nature;
 }
+
+people::people(const people &ob)
+{
+    cout << "\nThis copy constructor" << endl;
+}
+
+void Show(people& obj)
+{
+    cout << "Name  "  << obj.name << '\t' << "Year  " << obj.year << '\t' << "Nature  " << obj.nature << endl;
+}
+
+
