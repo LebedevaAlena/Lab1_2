@@ -5,20 +5,28 @@ using namespace std;
 
 people::people()
 {
-    //ctor
+
 }
 
 people::~people()
 {
-    cout << " This is destructor" << endl;
+    cout << " \nThis is destructor" << endl;
 }
 
-people::people(string name, int year, string nature)
+people::people(string name, int year, string gender)
 {
-    cout << " this is constructor" << endl;
+    cout << " This is param.constructor" << endl;
     this->name = name;
     this->year = year;
-    this->nature = nature;
+    this->gender = gender;
+    cout << "Name:  " << name << endl;
+    cout << "Year:  " << year << endl;
+    cout << "Gender:  " << gender << endl;
+}
+
+people::people(const people &ob)
+{
+    cout << "\nThis copy constructor" << endl;
 }
 
 people* people::SetName(string name)
@@ -31,9 +39,9 @@ int people::SetYear(int year)
     this->year = year;
 }
 
-string people::SetNature(string nature)
+string people::SetGender(string gender)
 {
-    this->nature = nature;
+    this->gender = gender;
 }
 
 string people::GetName()
@@ -46,19 +54,15 @@ int people::getYear()
     return year;
 }
 
-string people::GetNature()
+string people::GetGender()
 {
-    return nature;
+    return gender;
 }
 
-people::people(const people &ob)
-{
-    cout << "\nThis copy constructor" << endl;
-}
 
 void Show(people& obj)
 {
-    cout << "Name  "  << obj.name << '\t' << "Year  " << obj.year << '\t' << "Nature  " << obj.nature << endl;
+    cout << "\nName  "  << obj.name << '\t' << "Year  " << obj.year << '\t' << "Gender  " << obj.gender << endl;
 }
 
 
