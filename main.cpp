@@ -9,10 +9,11 @@ int main()
 
     people b(ob);
 
-    cout << "name  " << ob.GetName() << endl;
-    cout << "year  " << ob.getYear() << endl;
-    cout << "nature  " << ob.GetNature() << endl;
+    cout << "Name  " << ob.GetName() << endl;
+    cout << "Year  " << ob.getYear() << endl;
+    cout << "Gender  " << ob.GetGender() << endl;
 
+     cout << endl;
     cout << " friend function " << endl;
     Show(ob);
     return 0;
