@@ -7,11 +7,7 @@ int main()
 {
     people ob("Alena", 18, "Woman");
 
-    people b(ob);
-
-    cout << "Name  " << ob.GetName() << endl;
-    cout << "Year  " << ob.getYear() << endl;
-    cout << "Gender  " << ob.GetGender() << endl;
+    people k(ob);
 
      cout << endl;
     cout << " friend function " << endl;
