@@ -22,6 +22,7 @@ class people
         string name;
         int year;
         string gender;
+        char *k;
         friend void Show(people&);
 };
 
