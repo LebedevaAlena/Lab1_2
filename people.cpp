@@ -26,6 +26,9 @@ people::people(string name, int year, string gender)
 
 people::people(const people &ob)
 {
+    name = ob.name;
+    year = ob.year;
+    gender = ob.gender;
     cout << "\nThis copy constructor" << endl;
 }
 
