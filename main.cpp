@@ -8,7 +8,7 @@ int main()
     people ob("Alena", 18, "Woman");
 
     people k(ob);
-
+    Show(k);
      cout << endl;
     cout << " friend function " << endl;
     Show(ob);
